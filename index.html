@@ -1,0 +1,966 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]> <html class="no-js ie9" lang="en"><![endif]-->
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>Mercado Online</title>
+    <meta name="description" content="su supermercado online" />
+    <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.0, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="public/img/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="public/img/favicon.ico" />
+    <link rel="stylesheet" href="public/css/global.css" media="all" />
+    <link rel="stylesheet" href="public/css/autoload/animation.css" media="all" />
+    <link rel="stylesheet" href="public/css/autoload/highdpi.css" media="all" />
+    <link rel="stylesheet" href="public/css/autoload/responsive-tables.css" media="all" />
+    <link rel="stylesheet" href="public/css/autoload/uniform.default.css" media="all" />
+    <link rel="stylesheet" href="public/js/jquery/plugins/fancybox/jquery.fancybox.css" media="all" />
+    <link rel="stylesheet" href="public/css/lista_productos.css" media="all" />
+    <link rel="stylesheet" href="public/css/style.css" media="all" />
+    <link rel="stylesheet" href="public/js/jquery/plugins/bxslider/jquery.bxslider.css" media="all" />    
+    <link rel="stylesheet" href="public/css/tema.css" media="all" />
+    <link rel="stylesheet" href="public/css/menu.css" media="all" />
+    <link rel="stylesheet" href="public/css/carrito.css" media="all" />
+    <script type="text/javascript">
+        var CUSTOMIZE_TEXTFIELD = 1;
+        var FancyboxI18nClose = 'Cerrar';
+        var FancyboxI18nNext = 'Siguiente';
+        var FancyboxI18nPrev = 'Anterior';
+        var added_to_wishlist = 'Agregado a la Lista deseada.';
+        var ajax_allowed = true;
+        var ajaxsearch = true;
+        var baseDir = '/';
+        //var baseUri = 'index-2.html';
+        var carousel_auto = 1;
+        var carousel_auto_control = 0;
+        var carousel_auto_hover = 1;
+        var carousel_auto_pause = 3000;
+        var carousel_control = 1;
+        var carousel_hide_control = 1;
+        var carousel_item_margin = 30;
+        var carousel_item_nb = 4;
+        var carousel_item_scroll = 1;
+        var carousel_item_width = 290;
+        var carousel_loop = 0;
+        var carousel_pager = 0;
+        var carousel_random = 0;
+        var carousel_speed = 500;
+        var carousel_status = 1;
+        var comparator_max_item = 2;
+        var comparedProductsIds = [];
+        var contentOnly = false;
+        var customizationIdMessage = 'Customization #';
+        var delete_txt = 'Eleminar';
+        var displayList = false;
+        var freeProductTranslation = 'Free!';
+        var freeShippingTranslation = 'Free shipping!';
+        var generated_date = 1562043675;
+        var hasDeliveryAddress = false;
+        var homeslider_loop = 1;
+        var homeslider_pause = 3000;
+        var homeslider_speed = 500;
+        var homeslider_width = 10000;
+        var id_lang = 1;
+        var img_dir = 'themes/theme1255/img/index.html';
+        var instantsearch = true;
+        var isGuest = 0;
+        var isLogged = 0;
+        var isMobile = false;
+        var loggin_required = 'Debe iniciar sesión para administrar su lista de deseados.';
+        var max_item = 'No puede agregar más de 2 productos a la comparación de productos';
+        var min_item = '*****';
+        var module_url = '#';
+        var mywishlist_url = '#';
+        var nbItemsPerLine = 4;
+        var nbItemsPerLineMobile = 2;
+        var nbItemsPerLineTablet = 3;
+        var page_name = 'index';
+        var placeholder_blocknewsletter = 'Correo';
+        var popup_status = true;
+        var priceDisplayMethod = 1;
+        var priceDisplayPrecision = 2;
+        var quickVer = true;
+        var removingLinkText = 'Eliminar este producto de mi carrito';
+        var roundMode = 2;
+        var search_url = '/search';
+        var search_url_local = '/';
+        var static_token = '4f76805dccd95fb4eac7c0ed31ec4e57';
+        var text_close = 'Cerrar';
+        var text_description = 'Ingrese su dirección de correo electrónico para recibir todas las noticias, actualizaciones sobre los recién llegados, ofertas especiales y otra información de descuentos.';
+        var text_email = 'Tu correo electrónico';
+        var text_heading = 'Suscríbete a nuestro boletín';
+        var text_heading_1 = 'Suscríbete a nuestro boletín';
+        var text_heading_2 = 'Éxito';
+        var text_heading_3 = 'Error';
+        var text_placeholder = 'Introduce tu correo electrónico';
+        var text_remove = 'No mostrar de nuevo';
+        var text_sign = 'Suscribir';
+        var tm_cps_carousel_auto = 0;
+        var tm_cps_carousel_auto_control = 1;
+        var tm_cps_carousel_auto_hover = 1;
+        var tm_cps_carousel_auto_pause = 3000;
+        var tm_cps_carousel_control = 1;
+        var tm_cps_carousel_hide_control = 1;
+        var tm_cps_carousel_item_scroll = 1;
+        var tm_cps_carousel_loop = 1;
+        var tm_cps_carousel_nb = 4;
+        var tm_cps_carousel_pager = 0;
+        var tm_cps_carousel_random = 0;
+        var tm_cps_carousel_slide_margin = 20;
+        var tm_cps_carousel_slide_width = 180;
+        var tm_cps_carousel_speed = 500;
+        var tmnewsletter_status = '2';
+        var tmolarkchat_status = '2';
+        var toBeDetermined = 'Estar determinado';
+        var token = 'aa73b6ec9501064ad6a070f6e7b723a2';
+        var user_newsletter_status = 0;
+        var usingSecureMode = true;
+        var wishlistProductsIds = false;
+        var StartView = 0;
+    </script>
+
+    <script type="text/javascript" src="public/js/jquery/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="public/js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="public/js/jquery/plugins/jquery.easing.js"></script>
+    <script type="text/javascript" src="public/js/tools.js"></script>
+    <script type="text/javascript" src="public/js/index.js"></script>
+    <script type="text/javascript" src="public/js/plugins/autoload/10-bootstrap.min.js"></script>
+    <script type="text/javascript" src="public/js/plugins/autoload/14-device.min.js"></script>
+    <script type="text/javascript" src="public/js/plugins/autoload/15-jquery.total-storage.min.js"></script>
+    <script type="text/javascript" src="public/js/plugins/autoload/15-jquery.uniform-modified.js"></script>
+    <script type="text/javascript" src="public/js/plugins/autoload/16-jquery.scrollmagic.min.js"></script>
+    <script type="text/javascript" src="public/js/plugins/autoload/19-TweenMax.min.js"></script> 
+    <script type="text/javascript" src="public/js/jquery/plugins/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="public/js/plugins/slider.js"></script>
+    <script type="text/javascript" src="public/js/jquery/plugins/bxslider/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="public/js/plugins/menu/hoverIntent.js"></script>
+    <script type="text/javascript" src="public/js/plugins/menu/superfish.js"></script>
+    <script type="text/javascript" src="public/js/plugins/menu/menu.js"></script>
+    <script type="text/javascript" src="public//js/plugins/carrusel.js"></script>    
+    <script type="text/javascript" src="public/js/jquery/plugins/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="public/js/jquery/plugins/jquery.serialScroll.js"></script>    
+    <script type="text/javascript" src="public/js/plugins/index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700&subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic" type="text/css" media="all" />
+    <script src="public/js/plugins/vue/vue.min.js"></script>
+    <script src="public/js/plugins/vue/vue-router.min.js"></script>    
+    <script type="text/javascript" src="public/js/componentes/home.js"></script>
+    <script type="text/javascript" src="public/js/componentes/busqueda.js"></script>
+    <script type="text/javascript" src="public/js/componentes/productos.js"></script>
+    <!--[if IE 8]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="index" class="index hide-left-column hide-right-column lang_en  one-column">
+    <!--[if IE 8]>
+        <div style='clear:both;height:59px;padding:0 15px 0 15px;position:relative;z-index:10000;text-align:center;'><a href="//www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="https://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div>
+    <![endif]-->
+    <div id="page">
+        <div class="header-container">
+            <header id="header">
+                <div class="banner">
+                    <div class="container">
+                        <div class="row">
+                        </div>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="container">
+                        <div class="row">
+                            <nav>
+                                <div id="header_logo">
+                                    <router-link to="/" title="Super Market">
+                                        <img class="logo img-responsive" src="public/img/logo.svg" alt="Super Market" width="206" height="26" style="margin-top: -55px;height: 93px;" />
+                                    </router-link>                                   
+                                </div>                                
+                                <div id="languages-block-top" class="languages-block">
+                                    <div class="current">
+                                        <span>es</span>
+                                    </div>
+                                    <ul id="first-languages" class="languages-block_ul toogle_content">
+                                        <li>
+                                            <span>English</span>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" title="Deutsch (German)">
+                                                <span>Deutsch</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" title="Russian">
+                                                <span>Russian</span>
+                                            </a>
+                                        </li>
+                                        <li class="selected">
+                                            <a href="javascript:void(0);" title="Español (Spanish)">
+                                                <span>Español</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" title="Français (French)">
+                                                <span>Français</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="currencies-block-top">
+                                    <form id="setCurrency" action="javascript:void(0);" method="post">
+                                        <div class="current">
+                                            <input type="hidden" name="id_currency" id="id_currency" value="" />
+                                            <input type="hidden" name="SubmitCurrency" value="" />
+                                            <span class="cur-label">Currency :</span>
+                                            <strong>$</strong> </div>
+                                        <ul id="first-currencies" class="currencies_ul toogle_content">
+                                            <li class="selected">
+                                                <a href="javascript:void(0);" rel="nofollow" title="Dollar">
+                                                    Dollar
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);" rel="nofollow" title="Euro">
+                                                    Euro
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <div id="header-login">
+                                    <div class="current header_user_info">
+                                        <a href="javascript:void(0)" onclick="return false;">Acceder</a>
+                                    </div>
+                                    <ul id="header-login-content" class="toogle_content">
+                                        <li>
+                                            <form action="javascript:void(0)" method="post" id="header_login_form">
+                                                <div id="create_header_account_error" class="alert alert-danger"
+                                                    style="display:none;">
+                                                </div>
+                                                <div class="form_content clearfix">
+                                                    <div class="form-group">
+                                                        <label for="header-email">Email</label>
+                                                        <input class="is_required validate account_input form-control"
+                                                            data-validate="isEmail" type="text" id="header-email"
+                                                            name="header-email" value="" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="header-passwd">Contraseña</label>
+                                                        <span><input
+                                                                class="is_required validate account_input form-control"
+                                                                type="password" data-validate="isPasswd"
+                                                                id="header-passwd" name="header-passwd" value=""
+                                                                autocomplete="off" /></span>
+                                                    </div>
+                                                    <p class="submit">
+                                                        <button type="button" id="HeaderSubmitLogin"
+                                                            name="HeaderSubmitLogin" class="btn btn-default btn-sm">
+                                                            <i class="fa fa-lock left"></i>
+                                                            Acceder
+                                                        </button>
+                                                    </p>
+                                                    <p>
+                                                        <a href="javascript:void(0)" class="create">
+                                                            Crear una Cuenta    
+                                                        </a>
+                                                    </p>
+                                                    <div class="clearfix">
+                                                        <a class="btn btn-default btn-sm btn-login-facebook" href="javascript:void(0)" title="Login con su cuenta de Facebook">
+                                                            Facebook Login
+                                                        </a>
+                                                        <a class="btn btn-default btn-sm btn-login-google" href="javascript:void(0)" title="Login con su cuenta de Google">
+                                                            Google Login
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="permanent-links">
+                                    <div class="btn-menu  fa fa-align-justify current"></div>
+                                    <ul id="header_links" class="toogle_content">
+                                        <li id="header_link_home"><a href="javascript:void(0)"
+                                                class="header_links_home">Inicio</a>
+                                        </li>
+                                        <li id="header_link_contact">
+                                            <a href="javascript:void(0)" title="contact">Contacto</a>
+                                        </li>
+                                        <li id="header_link_sitemap">
+                                            <a href="javascript:void(0);" title="sitemap">Sitemap</a>
+                                        </li>
+                                        <li id="header_link_blog">
+                                            <a href="javascript:void(0);" title="blog">Blog</a>
+                                        </li>
+                                        <li id="header_link_wishlist">
+                                            <a href="javascript:void(0);" title="my wishlist">mi lista de deseos</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <div class="shopping_cart">
+                                        <a href="javascript:void(0);" title="Ver mi carrito de compras" rel="nofollow">
+                                            <b>Carrito</b>
+                                            <span class="ajax_cart_quantity unvisible">0</span>
+                                            <span class="ajax_cart_product_txt unvisible">Productos</span>
+                                            <span class="ajax_cart_product_txt_s unvisible">Productos</span>
+                                            <span class="ajax_cart_total unvisible">
+                                            </span>
+                                            <span class="ajax_cart_no_product">(Vacio)</span>
+                                        </a>
+                                        <div class="cart_block block">
+                                            <div class="block_content">
+                                                <!-- block list of products -->
+                                                <div class="cart_block_list">
+                                                    <p class="cart_block_no_products">
+                                                        Sin productos
+                                                    </p>
+                                                    <div class="cart-prices">
+                                                        <div class="cart-prices-line first-line  unvisible">
+                                                            <span class="cart_block_shipping_cost ajax_cart_shipping_cost">
+                                                                Sin Mensaje
+                                                            </span>
+                                                            <span>
+                                                                Envío
+                                                            </span>
+                                                        </div>
+                                                        <div class="cart-prices-line last-line">
+                                                            <span
+                                                                class="price cart_block_total ajax_block_cart_total">$0.00</span>
+                                                            <span>Total</span>
+                                                        </div>
+                                                    </div>
+                                                    <p class="cart-buttons">
+                                                        <a id="button_order_cart"
+                                                            class="btn btn-default btn-sm icon-right"
+                                                            href="javascript:void(0);" title="Check out"
+                                                            rel="nofollow">
+                                                            <span>
+                                                                Verificar
+                                                            </span>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div><!-- .cart_block -->
+                                    </div>
+                                </div>
+                                <div id="layer_cart">
+                                    <div class="clearfix">
+                                        <div class="layer_cart_product col-xs-12 col-md-6">
+                                            <span class="cross" title="Close window"></span>
+                                            <h2>
+                                                <i class="fa fa-ok"></i>
+                                                Producto agregado con éxito a su carrito de compras
+                                            </h2>
+                                            <div class="product-image-container layer_cart_img">
+                                            </div>
+                                            <div class="layer_cart_product_info">
+                                                <span id="layer_cart_product_title" class="product-name"></span>
+                                                <span id="layer_cart_product_attributes"></span>
+                                                <div>
+                                                    <strong class="dark">Cantidad</strong>
+                                                    <span id="layer_cart_product_quantity"></span>
+                                                </div>
+                                                <div>
+                                                    <strong class="dark">Total</strong>
+                                                    <span id="layer_cart_product_price"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="layer_cart_cart col-xs-12 col-md-6">
+                                            <h2>
+                                                <!-- Plural Case [both cases are needed because page may be updated in Javascript] -->
+                                                <span class="ajax_cart_product_txt_s  unvisible">
+                                                    Hay <span class="ajax_cart_quantity">0</span> artículos en su carrito.
+                                                </span>
+                                                <!-- Singular Case [both cases are needed because page may be updated in Javascript] -->
+                                                <span class="ajax_cart_product_txt ">
+                                                    Hay 1 artículo en su carrito.
+                                                </span>
+                                            </h2>
+                                            <div class="layer_cart_row">
+                                                <strong class="dark">
+                                                    Total de productos
+                                                </strong>
+                                                <span class="ajax_block_products_total">
+                                                </span>
+                                            </div>
+                                            <div class="layer_cart_row">
+                                                <strong class="dark unvisible">
+                                                    Envío total&nbsp; </strong>
+                                                <span class="ajax_cart_shipping_cost unvisible">
+                                                    S/M </span>
+                                            </div>
+                                            <div class="layer_cart_row">
+                                                <strong class="dark">
+                                                    Total
+                                                </strong>
+                                                <span class="ajax_block_cart_total">
+                                                </span>
+                                            </div>
+                                            <div class="button-container">
+                                                <span class="continue btn btn-default btn-md icon-left"
+                                                    title="Continue shopping">
+                                                    <span>
+                                                        Continue comprando
+                                                    </span>
+                                                </span>
+                                                <a class="btn btn-default btn-md icon-right"
+                                                    href="javascript:void(0);" title="Proceed to checkout"
+                                                    rel="nofollow">
+                                                    <span>
+                                                        Procesar la compra
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crossseling"></div>
+                                </div> 
+                                <div class="layer_cart_overlay"></div>                            
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-top">
+                    <div class="container">
+                        <div class="row">
+                            <div id="tmsearch" class="">
+                                <form id="tmsearchbox" action="#">                                    
+                                    <input class="tm_search_query form-control" type="text" id="tm_search_query"
+                                        name="search_query" placeholder="Búscar..." value="" />
+                                    <!-- <button type="button" name="tm_submit_search" v-on:click="Buscar" class="btn btn-default button-search">
+                                        <span>Búscar</span>
+                                    </button> -->
+                                    <router-link to="/Search" class="btn btn-default button-search">
+                                        <span>Búscar</span>
+                                    </router-link>   
+                                </form>
+                            </div>
+                            <div class="top_menu">
+                                <div class="menu-title">Menu</div>
+                                <ul class="menu clearfix">
+                                    <li class="">                                        
+                                        <router-link to="/">Inicio</router-link>
+                                    </li>
+                                    <li class="">
+                                        <a href="javascript:void(0);">ESPECIALES DEL MES</a>                                        
+                                    </li>
+                                    <li class="">
+                                        <a href="javascript:void(0);">Top de Categorias</a>
+                                        <div class="is-megamenu">
+                                            <div id="megamenu-row-1" class="megamenu-row row megamenu-row-1">
+                                                <div id="column-1-1" class="megamenu-col megamenu-col-1-1 col-sm-2 ">
+                                                    <ul class="content">
+                                                        <li class="html-col1 html">
+                                                            <h3>Sobre nosotros</h3>
+                                                            <p>Somos un equipo de programadores de la universidad UIP.</p>
+                                                            <p>Contacte con nosotros a travez de nuestros correos electronicos.</p>
+                                                            <p>
+                                                                <a class="btn btn-default" href="javascript:void(0);">Leer Más</a>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id="column-1-2" class="megamenu-col megamenu-col-1-2 col-sm-2 ">
+                                                    <ul class="content">
+                                                        <li class="html-col2 html">
+                                                            <h3>Compras por productos</h3>
+                                                            <ul class="list-catigory-menu">
+                                                                <li>
+                                                                    <a href="javascript:void(0);">
+                                                                        Aseo personal
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">Carniceria</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">Verduras</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">Aseo Domestico</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">Licores</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">Frutas</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">Ferreteria</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">Jardineria</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id="column-1-3" class="megamenu-col megamenu-col-1-3 col-sm-2 ">
+                                                    <ul class="content">
+                                                        <li class="html-col3 html">
+                                                            <h3>Compras por Marcas</h3>
+                                                            <ul class="list-brands-menu">
+                                                                <li>
+                                                                    <a href="javascript:void(0);">SC Johnson</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">Black and Decker</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">Bosch</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">La Doña</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">DeWALT</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">Quaker</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">Pampers</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="javascript:void(0);">Scott</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id="column-1-4"
+                                                    class="megamenu-col megamenu-col-1-4 col-sm-3  list_product_menu">
+                                                    <ul class="content">
+                                                        <li class="custom-link">
+                                                            <a href="javascript:void(0);">ARTÍCULOS POPULARES</a>
+                                                        </li>
+                                                        <li class="product-info">
+                                                            <div class="product product-13">
+                                                                <div class="product-image">
+                                                                    <a href="javascript:void(0);" title="Kit combinado compacto de iones de litio inalámbrico de 2 piezas">
+                                                                        <img class="img-responsive" src="public/img/Productos/herramientas/74.1.jpg"
+                                                                            alt="Kit combinado compacto de iones de litio inalámbrico de 2 piezas" />
+                                                                    </a>
+                                                                </div>
+                                                                <h5 class="product-name">
+                                                                    <a href="javascript:void(0);" title="Kit combinado compacto de iones de litio inalámbrico de 2 piezas">
+                                                                        Compacto de iones de litio ...
+                                                                    </a>
+                                                                </h5>
+                                                                <p class="product-description">
+                                                                    Los productos de nuestra tienda ...
+                                                                </p>
+                                                                <span class="price">$60.00</span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="product-info">
+                                                            <div class="product product-16">
+                                                                <div class="product-image">
+                                                                    <a href="javascript:void(0);" title="Clavadora de clavos de calibre 23 1-3-8 pulgadas">
+                                                                        <img class="img-responsive"
+                                                                            src="public/img/Productos/herramientas/92.jpg" alt="Clavadora de clavos de calibre 23 1-3-8 pulgadas " />
+                                                                    </a>
+                                                                </div>
+                                                                <h5 class="product-name">
+                                                                    <a href="javascript:void(0);"
+                                                                        title="Clavadora de clavos de calibre 23 1-3-8 pulgadas ">
+                                                                        Clavadora de clavos de calibre 23 1-3-8 pulgadas
+                                                                    </a>
+                                                                </h5>
+                                                                <p class="product-description">
+                                                                    Los productos de nuestra tienda ...
+                                                                </p>
+                                                                <span class="price">$100.00</span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id="column-1-5"
+                                                    class="megamenu-col megamenu-col-1-5 col-sm-3  list_product_menu">
+                                                    <ul class="content">
+                                                        <li class="html-col5 html">
+                                                            <h3>Servicios</h3>
+                                                            <ul class="list-popular-services">
+                                                                <li>
+                                                                    <em class="material-design-phone370 ">1</em>
+                                                                    <p>
+                                                                        <a href="javascript:void(0);">Entrega Gratis.</a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <em class="material-design-history6">1</em>
+                                                                    <p>
+                                                                        <a href="javascript:void(0);">Rápida Entrega.</a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <em class="material-design-bookmark45 ">1</em>
+                                                                    <p>
+                                                                        <a href="javascript:void(0);">Atención Personalizada.</a>
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div id="megamenu-row-2" class="megamenu-row row megamenu-row-2">
+                                                <div id="column-2-1" class="megamenu-col megamenu-col-2-1 col-sm-4 ">
+                                                    <ul class="content">
+                                                        <li>
+                                                            <a href="javascript:void(0);">
+                                                                <img class="img-responsive" src="public/img/menu/menu1.jpg" alt="menu-banner1" />
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id="column-2-2" class="megamenu-col megamenu-col-2-2 col-sm-4 ">
+                                                    <ul class="content">
+                                                        <li>
+                                                            <a href="javascript:void(0)">
+                                                                <img class="img-responsive" src="public/img/menu/menu2.jpg" alt="menu-banner2" />
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id="column-2-3" class="megamenu-col megamenu-col-2-3 col-sm-4 ">
+                                                    <ul class="content">
+                                                        <li>
+                                                            <a href="javascript:void(0);">
+                                                                <img class="img-responsive" src="public/img/menu/menu3.jpg" alt="menu-banner3" />
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <a href="javascript:void(0);">
+                                            Panaderia
+                                            <span class="menu_badge">Nuevo</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="javascript:void(0);">
+                                            Mascotas (PETS)
+                                            <span class="menu_badge">Nuevo</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="javascript:void(0);">Snacks</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="javascript:void(0);">Hogar</a>                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <router-view></router-view>       
+        <!-- Footer -->
+        <div class="footer-container">
+            <footer id="footer" class="container">
+                <div class="row">
+                    <div class="footer-block1 col-xs-12 col-sm-4 col-md-4"></div>
+                    <div class="footer-block2 col-xs-12 col-sm-4 col-md-2"></div>
+                    <div class="footer-block3 col-xs-12 col-sm-4 col-md-2"></div>
+                    <div class="footer-block4 col-xs-12 col-sm-12 col-md-4"></div>
+                    <!-- Módulo de boletines informativos-->
+                    <div id="newsletter_block_left" class="block">
+                        <h4>Boletín Informativo</h4>
+                        <div class="block_content">
+                            <form action="javascript:void(0);" method="post">
+                                <div class="form-group">
+                                    <input class="inputNuevo form-control grey newsletter-input" id="newsletter-input"
+                                        type="text" name="email" size="18" value="Correo" />
+                                    <button type="submit" name="submitNuevosletter" class="btn btn-default btn-sm">
+                                        <span>Ok</span>
+                                    </button>
+                                    <input type="hidden" name="action" value="0" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /Módulo de boletines informativos-->
+                    <section id="social_block">
+                        <h4>Síguenos</h4>
+                        <ul>
+                            <li class="facebook">
+                                <a href="javascript:void(0);" title="Facebook">
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li class="twitter">
+                                <a href="javascript:void(0);" title="Twitter">
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li class="rss">
+                                <a href="javascript:void(0);" title="RSS">
+                                    <span>RSS</span>
+                                </a>
+                            </li>
+                            <li class="google-plus">
+                                <a href="javascript:void(0);" title="Google Plus">
+                                    <span>Google Plus</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- Block categories module -->
+                    <section class="blockcategories_footer footer-block">
+                        <h4>Categorias</h4>
+                        <div class="category_footer toggle-footer">
+                            <div class="list">
+                                <ul class="tree dhtml">
+                                    <li>
+                                        <a href="javascript:void(0);" title="Departamento de bebes, contiene todo lo relacionados con bebes.">
+                                            Bebe
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" title="Departamento de carnes y embutidos, todo lo relacionado con carnes y embutidos.">
+                                            Carnes y Embutidos
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" title="Departamento de Frutas y Verduras, este departamento contiene todo lo relacionado con las frutas y verduras en nuestro sistema.">
+                                            Frutas y Verduras
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" title="Departamento de Lácteos, contiene todo lo relacionado con yogurt, leche y todos sus dereivados.">
+                                            Lácteos
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" title="Departamento de Panaderia, contine los productos relacionados ocn la panaderia en general.">
+                                            Panes y Dulces
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" title="Nuevo departamento en nuestro sistema, contiene todo lo relacionado con herramientas.">
+                                            Herramientas
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <!-- .category_footer -->
+                    </section>
+                    <!-- /Block categories module -->
+                    <!-- MODULE Block footer -->
+                    <section class="footer-block " id="block_various_links_footer">
+                        <h4>Información</h4>
+                        <ul class="toggle-footer">
+                            <li class="item">
+                                <a href="javascript:void(0);" title="Specials">
+                                    Especiales
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="javascript:void(0);" title="Nuevo products">
+                                    Nuevos productos
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="javascript:void(0);" title="Top sellers">
+                                    Los más vendidos
+                                </a>
+                            </li>                           
+                            <li class="item">
+                                <a href="javascript:void(0);" title="Contact us">
+                                    Contáctenos
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="javascript:void(0);" title="About us">
+                                    Sobre nosotros
+                                </a>
+                            </li>                           
+                            <li>
+                                <a href="javascript:void(0);" title="Sitemap">
+                                    Mapa del sitio
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fa  fa-home"></i>
+                                Universidad (U.I.P)
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <span>800-5000-6789</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o"></i>
+                                <span>
+                                    <a href="javascript:void(0);">informacion@uip.edu.pa</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </section>
+                    <div class="bottom-footer col-xs-12">
+                        <div>
+                            &copy; <span class="current-year">2019</span> <a title="Claudia Barrios" href="javascript:void(0);">Ecommerce software by Claudia Barrios</a>
+                        </div>
+                    </div>
+                    <!-- /MODULE Block footer -->
+                    <!-- Bloque módulo de mi cuenta -->
+                    <section id="blockmyaccountfooter" class="footer-block ">
+                        <h4>
+                            <a href="javascript:void(0);" title="Mi informacion personal" rel="nofollow">Mi cuenta</a>
+                        </h4>
+                        <div class="block_content toggle-footer">
+                            <ul class="bullet">
+                                <li>
+                                    <a href="javascript:void(0);" title="Mis Ordenes" rel="nofollow">Mis Ordenes</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="Mis devoluciones de mercancia" rel="nofollow">Mis devoluciones de mercancia</a>
+                                </li>                                
+                                <li>
+                                    <a href="javascript:void(0);" title="Mis direcciones" rel="nofollow">Mis direcciones</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="Mi informacion personal" rel="nofollow">Mi informacion personal</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- /Bloque módulo de mi cuenta -->
+                    <div id="htmlcontent_footer">
+                        <ul class="htmlcontent-home clearfix row">
+                            <li class="htmlcontent-item-1 col-xs-4">
+                                <div class="item-html">
+                                    <h4>Acerca</h4>
+                                    <p>Sosmos un grupo de jovenes proactivos diseñando una aplicacion de Ecommerce.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>                   
+                </div>
+            </footer>
+        </div>
+        <!-- #footer -->                    
+    </div>
+    <!-- #page -->
+    <script type="text/javascript">
+        //$(document).ready(function () {            
+            (function() {
+            setNbCatItems();
+            tmCategoryCarousel3 = $('#block-category-3 > ul').bxSlider({
+                responsive: true,
+                useCSS: false,
+                minSlides: tm_cps_carousel_nb_new,
+                maxSlides: tm_cps_carousel_nb_new,
+                slideWidth: tm_cps_carousel_slide_width,
+                slideMargin: tm_cps_carousel_slide_margin,
+                infiniteLoop: tm_cps_carousel_loop,
+                hideControlOnEnd: tm_cps_carousel_hide_control,
+                randomStart: tm_cps_carousel_random,
+                moveSlides: tm_cps_carousel_item_scroll,
+                pager: tm_cps_carousel_pager,
+                autoHover: tm_cps_carousel_auto_hover,
+                auto: tm_cps_carousel_auto,
+                speed: tm_cps_carousel_speed,
+                pause: tm_cps_carousel_auto_pause,
+                controls: tm_cps_carousel_control,
+                autoControls: tm_cps_carousel_auto_control,
+                startText: '',
+                stopText: '',
+                onSliderLoad: function () {
+                    $("#homepage-carousel li:not([class='bx-clone'])").eq(0).addClass('current');
+                },
+                onSlideBefore: function () {
+                    $("#homepage-carousel li").removeClass('current');
+                    current = slider.getCurrentSlide();
+                    $("#homepage-carousel li:not([class='bx-clone'])").eq(current).addClass('current');
+                }
+
+
+            });
+
+            var tm_cps_doit;
+            $(window).resize(function () {
+                clearTimeout(tm_cps_doit);
+                tm_cps_doit = setTimeout(function () {
+                    resizedwtm_cps3();
+                }, 201);
+            });
+            
+            const routes = [
+                { path: '/', component: Home },               
+                { path: '/Search', component: Search },
+                { path: '/AllProd', component: Productos },
+            ];
+            const router = new VueRouter({
+                //mode: 'history',
+                routes,                
+            });
+            const app = new Vue({
+                router,
+                mounted(){
+                    ///console.log("******************************");
+                } ,
+                methods:{
+                    Buscar:function(event){
+                        console.log("LLamo a buscar");
+                    }
+                }             
+            }).$mount('#page');
+        //});
+        })();
+        function resizedwtm_cps3() {
+            setNbCatItems();
+            tmCategoryCarousel3.reloadSlider({
+                responsive: true,
+                useCSS: false,
+                minSlides: tm_cps_carousel_nb_new,
+                maxSlides: tm_cps_carousel_nb_new,
+                slideWidth: tm_cps_carousel_slide_width,
+                slideMargin: tm_cps_carousel_slide_margin,
+                infiniteLoop: tm_cps_carousel_loop,
+                hideControlOnEnd: tm_cps_carousel_hide_control,
+                randomStart: tm_cps_carousel_random,
+                moveSlides: tm_cps_carousel_item_scroll,
+                pager: tm_cps_carousel_pager,
+                autoHover: tm_cps_carousel_auto_hover,
+                auto: tm_cps_carousel_auto,
+                speed: tm_cps_carousel_speed,
+                pause: tm_cps_carousel_auto_pause,
+                controls: tm_cps_carousel_control,
+                autoControls: tm_cps_carousel_auto_control,
+                startText: '',
+                stopText: '',
+                onSliderLoad: function () {
+                    $("#homepage-carousel li:not([class='bx-clone'])").eq(0).addClass('current');
+                },
+                onSlideBefore: function () {
+                    $("#homepage-carousel li").removeClass('current');
+                    current = slider.getCurrentSlide();
+                    $("#homepage-carousel li:not([class='bx-clone'])").eq(current).addClass('current');
+                }
+            });
+        }
+        function setNbCatItems() {
+            if ($('.category-block').width() < 400)
+                tm_cps_carousel_nb_new = 1;
+            if ($('.category-block').width() >= 400)
+                tm_cps_carousel_nb_new = 2;
+            if ($('.category-block').width() >= 560)
+                tm_cps_carousel_nb_new = 3;
+            if ($('.category-block').width() > 840)
+                tm_cps_carousel_nb_new = tm_cps_carousel_nb;
+        }
+    </script>
+</body>
+</html>
