@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="public/js/jquery/plugins/fancybox/jquery.fancybox.css" media="all" />
     <link rel="stylesheet" href="public/css/lista_productos.css" media="all" />
     <link rel="stylesheet" href="public/css/style.css" media="all" />
-    <link rel="stylesheet" href="public/js/jquery/plugins/bxslider/jquery.bxslider.css" media="all" />    
+    <link rel="stylesheet" href="public/js/jquery/plugins/bxslider/jquery.bxslider.css" media="all" />
     <link rel="stylesheet" href="public/css/tema.css" media="all" />
     <link rel="stylesheet" href="public/css/menu.css" media="all" />
     <link rel="stylesheet" href="public/css/carrito.css" media="all" />
@@ -134,28 +134,33 @@
     <script type="text/javascript" src="public/js/plugins/autoload/15-jquery.total-storage.min.js"></script>
     <script type="text/javascript" src="public/js/plugins/autoload/15-jquery.uniform-modified.js"></script>
     <script type="text/javascript" src="public/js/plugins/autoload/16-jquery.scrollmagic.min.js"></script>
-    <script type="text/javascript" src="public/js/plugins/autoload/19-TweenMax.min.js"></script> 
+    <script type="text/javascript" src="public/js/plugins/autoload/19-TweenMax.min.js"></script>
     <script type="text/javascript" src="public/js/jquery/plugins/fancybox/jquery.fancybox.js"></script>
     <script type="text/javascript" src="public/js/plugins/slider.js"></script>
     <script type="text/javascript" src="public/js/jquery/plugins/bxslider/jquery.bxslider.js"></script>
     <script type="text/javascript" src="public/js/plugins/menu/hoverIntent.js"></script>
     <script type="text/javascript" src="public/js/plugins/menu/superfish.js"></script>
     <script type="text/javascript" src="public/js/plugins/menu/menu.js"></script>
-    <script type="text/javascript" src="public//js/plugins/carrusel.js"></script>    
+    <script type="text/javascript" src="public//js/plugins/carrusel.js"></script>
     <script type="text/javascript" src="public/js/jquery/plugins/jquery.scrollTo.js"></script>
-    <script type="text/javascript" src="public/js/jquery/plugins/jquery.serialScroll.js"></script>    
+    <script type="text/javascript" src="public/js/jquery/plugins/jquery.serialScroll.js"></script>
     <script type="text/javascript" src="public/js/plugins/index.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700&subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic" type="text/css" media="all" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700&subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic"
+        type="text/css" media="all" />
     <script src="public/js/plugins/vue/vue.min.js"></script>
-    <script src="public/js/plugins/vue/vue-router.min.js"></script>    
+    <script src="public/js/plugins/vue/vue-router.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script type="text/javascript" src="public/js/componentes/home.js"></script>
     <script type="text/javascript" src="public/js/componentes/busqueda.js"></script>
     <script type="text/javascript" src="public/js/componentes/productos.js"></script>
+    <script type="text/javascript" src="public/js/componentes/contacto.js"></script>
     <!--[if IE 8]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body id="index" class="index hide-left-column hide-right-column lang_en  one-column">
     <!--[if IE 8]>
         <div style='clear:both;height:59px;padding:0 15px 0 15px;position:relative;z-index:10000;text-align:center;'><a href="//www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="https://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div>
@@ -175,9 +180,10 @@
                             <nav>
                                 <div id="header_logo">
                                     <router-link to="/" title="Super Market">
-                                        <img class="logo img-responsive" src="public/img/logo.svg" alt="Super Market" width="206" height="26" style="margin-top: -55px;height: 93px;" />
-                                    </router-link>                                   
-                                </div>                                
+                                        <img class="logo img-responsive" src="public/img/logo.svg" alt="Super Market"
+                                            width="206" height="26" style="margin-top: -55px;height: 93px;" />
+                                    </router-link>
+                                </div>
                                 <div id="languages-block-top" class="languages-block">
                                     <div class="current">
                                         <span>es</span>
@@ -263,14 +269,18 @@
                                                     </p>
                                                     <p>
                                                         <a href="javascript:void(0)" class="create">
-                                                            Crear una Cuenta    
+                                                            Crear una Cuenta
                                                         </a>
                                                     </p>
                                                     <div class="clearfix">
-                                                        <a class="btn btn-default btn-sm btn-login-facebook" href="javascript:void(0)" title="Login con su cuenta de Facebook">
+                                                        <a class="btn btn-default btn-sm btn-login-facebook"
+                                                            href="javascript:void(0)"
+                                                            title="Login con su cuenta de Facebook">
                                                             Facebook Login
                                                         </a>
-                                                        <a class="btn btn-default btn-sm btn-login-google" href="javascript:void(0)" title="Login con su cuenta de Google">
+                                                        <a class="btn btn-default btn-sm btn-login-google"
+                                                            href="javascript:void(0)"
+                                                            title="Login con su cuenta de Google">
                                                             Google Login
                                                         </a>
                                                     </div>
@@ -294,9 +304,6 @@
                                         <li id="header_link_blog">
                                             <a href="javascript:void(0);" title="blog">Blog</a>
                                         </li>
-                                        <li id="header_link_wishlist">
-                                            <a href="javascript:void(0);" title="my wishlist">mi lista de deseos</a>
-                                        </li>
                                     </ul>
                                 </div>
                                 <div class="">
@@ -319,7 +326,8 @@
                                                     </p>
                                                     <div class="cart-prices">
                                                         <div class="cart-prices-line first-line  unvisible">
-                                                            <span class="cart_block_shipping_cost ajax_cart_shipping_cost">
+                                                            <span
+                                                                class="cart_block_shipping_cost ajax_cart_shipping_cost">
                                                                 Sin Mensaje
                                                             </span>
                                                             <span>
@@ -335,8 +343,7 @@
                                                     <p class="cart-buttons">
                                                         <a id="button_order_cart"
                                                             class="btn btn-default btn-sm icon-right"
-                                                            href="javascript:void(0);" title="Check out"
-                                                            rel="nofollow">
+                                                            href="javascript:void(0);" title="Check out" rel="nofollow">
                                                             <span>
                                                                 Verificar
                                                             </span>
@@ -374,7 +381,8 @@
                                             <h2>
                                                 <!-- Plural Case [both cases are needed because page may be updated in Javascript] -->
                                                 <span class="ajax_cart_product_txt_s  unvisible">
-                                                    Hay <span class="ajax_cart_quantity">0</span> artículos en su carrito.
+                                                    Hay <span class="ajax_cart_quantity">0</span> artículos en su
+                                                    carrito.
                                                 </span>
                                                 <!-- Singular Case [both cases are needed because page may be updated in Javascript] -->
                                                 <span class="ajax_cart_product_txt ">
@@ -408,9 +416,8 @@
                                                         Continue comprando
                                                     </span>
                                                 </span>
-                                                <a class="btn btn-default btn-md icon-right"
-                                                    href="javascript:void(0);" title="Proceed to checkout"
-                                                    rel="nofollow">
+                                                <a class="btn btn-default btn-md icon-right" href="javascript:void(0);"
+                                                    title="Proceed to checkout" rel="nofollow">
                                                     <span>
                                                         Procesar la compra
                                                     </span>
@@ -419,8 +426,8 @@
                                         </div>
                                     </div>
                                     <div class="crossseling"></div>
-                                </div> 
-                                <div class="layer_cart_overlay"></div>                            
+                                </div>
+                                <div class="layer_cart_overlay"></div>
                             </nav>
                         </div>
                     </div>
@@ -429,25 +436,25 @@
                     <div class="container">
                         <div class="row">
                             <div id="tmsearch" class="">
-                                <form id="tmsearchbox" action="#">                                    
+                                <form id="tmsearchbox" action="#">
                                     <input class="tm_search_query form-control" type="text" id="tm_search_query"
                                         name="search_query" placeholder="Búscar..." value="" />
                                     <!-- <button type="button" name="tm_submit_search" v-on:click="Buscar" class="btn btn-default button-search">
-                                        <span>Búscar</span>
+                                        <span>Búscar  /Search</span>
                                     </button> -->
                                     <router-link to="/Search" class="btn btn-default button-search">
                                         <span>Búscar</span>
-                                    </router-link>   
+                                    </router-link>
                                 </form>
                             </div>
                             <div class="top_menu">
                                 <div class="menu-title">Menu</div>
                                 <ul class="menu clearfix">
-                                    <li class="">                                        
+                                    <li class="">
                                         <router-link to="/">Inicio</router-link>
                                     </li>
                                     <li class="">
-                                        <a href="javascript:void(0);">ESPECIALES DEL MES</a>                                        
+                                        <a href="javascript:void(0);">ESPECIALES DEL MES</a>
                                     </li>
                                     <li class="">
                                         <a href="javascript:void(0);">Top de Categorias</a>
@@ -457,10 +464,13 @@
                                                     <ul class="content">
                                                         <li class="html-col1 html">
                                                             <h3>Sobre nosotros</h3>
-                                                            <p>Somos un equipo de programadores de la universidad UIP.</p>
-                                                            <p>Contacte con nosotros a travez de nuestros correos electronicos.</p>
+                                                            <p>Somos un equipo de programadores de la universidad UIP.
+                                                            </p>
+                                                            <p>Contacte con nosotros a travez de nuestros correos
+                                                                electronicos.</p>
                                                             <p>
-                                                                <a class="btn btn-default" href="javascript:void(0);">Leer Más</a>
+                                                                <a class="btn btn-default"
+                                                                    href="javascript:void(0);">Leer Más</a>
                                                             </p>
                                                         </li>
                                                     </ul>
@@ -542,13 +552,16 @@
                                                         <li class="product-info">
                                                             <div class="product product-13">
                                                                 <div class="product-image">
-                                                                    <a href="javascript:void(0);" title="Kit combinado compacto de iones de litio inalámbrico de 2 piezas">
-                                                                        <img class="img-responsive" src="public/img/Productos/herramientas/74.1.jpg"
+                                                                    <a href="javascript:void(0);"
+                                                                        title="Kit combinado compacto de iones de litio inalámbrico de 2 piezas">
+                                                                        <img class="img-responsive"
+                                                                            src="public/img/Productos/herramientas/74.1.jpg"
                                                                             alt="Kit combinado compacto de iones de litio inalámbrico de 2 piezas" />
                                                                     </a>
                                                                 </div>
                                                                 <h5 class="product-name">
-                                                                    <a href="javascript:void(0);" title="Kit combinado compacto de iones de litio inalámbrico de 2 piezas">
+                                                                    <a href="javascript:void(0);"
+                                                                        title="Kit combinado compacto de iones de litio inalámbrico de 2 piezas">
                                                                         Compacto de iones de litio ...
                                                                     </a>
                                                                 </h5>
@@ -561,9 +574,11 @@
                                                         <li class="product-info">
                                                             <div class="product product-16">
                                                                 <div class="product-image">
-                                                                    <a href="javascript:void(0);" title="Clavadora de clavos de calibre 23 1-3-8 pulgadas">
+                                                                    <a href="javascript:void(0);"
+                                                                        title="Clavadora de clavos de calibre 23 1-3-8 pulgadas">
                                                                         <img class="img-responsive"
-                                                                            src="public/img/Productos/herramientas/92.jpg" alt="Clavadora de clavos de calibre 23 1-3-8 pulgadas " />
+                                                                            src="public/img/Productos/herramientas/92.jpg"
+                                                                            alt="Clavadora de clavos de calibre 23 1-3-8 pulgadas " />
                                                                     </a>
                                                                 </div>
                                                                 <h5 class="product-name">
@@ -589,19 +604,22 @@
                                                                 <li>
                                                                     <em class="material-design-phone370 ">1</em>
                                                                     <p>
-                                                                        <a href="javascript:void(0);">Entrega Gratis.</a>
+                                                                        <a href="javascript:void(0);">Entrega
+                                                                            Gratis.</a>
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <em class="material-design-history6">1</em>
                                                                     <p>
-                                                                        <a href="javascript:void(0);">Rápida Entrega.</a>
+                                                                        <a href="javascript:void(0);">Rápida
+                                                                            Entrega.</a>
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <em class="material-design-bookmark45 ">1</em>
                                                                     <p>
-                                                                        <a href="javascript:void(0);">Atención Personalizada.</a>
+                                                                        <a href="javascript:void(0);">Atención
+                                                                            Personalizada.</a>
                                                                     </p>
                                                                 </li>
                                                             </ul>
@@ -614,7 +632,9 @@
                                                     <ul class="content">
                                                         <li>
                                                             <a href="javascript:void(0);">
-                                                                <img class="img-responsive" src="public/img/menu/menu1.jpg" alt="menu-banner1" />
+                                                                <img class="img-responsive"
+                                                                    src="public/img/menu/menu1.jpg"
+                                                                    alt="menu-banner1" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -623,7 +643,9 @@
                                                     <ul class="content">
                                                         <li>
                                                             <a href="javascript:void(0)">
-                                                                <img class="img-responsive" src="public/img/menu/menu2.jpg" alt="menu-banner2" />
+                                                                <img class="img-responsive"
+                                                                    src="public/img/menu/menu2.jpg"
+                                                                    alt="menu-banner2" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -632,7 +654,9 @@
                                                     <ul class="content">
                                                         <li>
                                                             <a href="javascript:void(0);">
-                                                                <img class="img-responsive" src="public/img/menu/menu3.jpg" alt="menu-banner3" />
+                                                                <img class="img-responsive"
+                                                                    src="public/img/menu/menu3.jpg"
+                                                                    alt="menu-banner3" />
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -656,7 +680,7 @@
                                         <a href="javascript:void(0);">Snacks</a>
                                     </li>
                                     <li class="">
-                                        <a href="javascript:void(0);">Hogar</a>                                        
+                                        <a href="javascript:void(0);">Hogar</a>
                                     </li>
                                 </ul>
                             </div>
@@ -665,7 +689,7 @@
                 </div>
             </header>
         </div>
-        <router-view></router-view>       
+        <router-view></router-view>
         <!-- Footer -->
         <div class="footer-container">
             <footer id="footer" class="container">
@@ -723,38 +747,44 @@
                             <div class="list">
                                 <ul class="tree dhtml">
                                     <li>
-                                        <a href="javascript:void(0);" title="Departamento de bebes, contiene todo lo relacionados con bebes.">
+                                        <a href="javascript:void(0);"
+                                            title="Departamento de bebes, contiene todo lo relacionados con bebes.">
                                             Bebe
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" title="Departamento de carnes y embutidos, todo lo relacionado con carnes y embutidos.">
+                                        <a href="javascript:void(0);"
+                                            title="Departamento de carnes y embutidos, todo lo relacionado con carnes y embutidos.">
                                             Carnes y Embutidos
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" title="Departamento de Frutas y Verduras, este departamento contiene todo lo relacionado con las frutas y verduras en nuestro sistema.">
+                                        <a href="javascript:void(0);"
+                                            title="Departamento de Frutas y Verduras, este departamento contiene todo lo relacionado con las frutas y verduras en nuestro sistema.">
                                             Frutas y Verduras
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" title="Departamento de Lácteos, contiene todo lo relacionado con yogurt, leche y todos sus dereivados.">
+                                        <a href="javascript:void(0);"
+                                            title="Departamento de Lácteos, contiene todo lo relacionado con yogurt, leche y todos sus dereivados.">
                                             Lácteos
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" title="Departamento de Panaderia, contine los productos relacionados ocn la panaderia en general.">
+                                        <a href="javascript:void(0);"
+                                            title="Departamento de Panaderia, contine los productos relacionados ocn la panaderia en general.">
                                             Panes y Dulces
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" title="Nuevo departamento en nuestro sistema, contiene todo lo relacionado con herramientas.">
+                                        <a href="javascript:void(0);"
+                                            title="Nuevo departamento en nuestro sistema, contiene todo lo relacionado con herramientas.">
                                             Herramientas
                                         </a>
                                     </li>
                                 </ul>
                             </div>
-                        </div> 
+                        </div>
                         <!-- .category_footer -->
                     </section>
                     <!-- /Block categories module -->
@@ -776,17 +806,17 @@
                                 <a href="javascript:void(0);" title="Top sellers">
                                     Los más vendidos
                                 </a>
-                            </li>                           
-                            <li class="item">
-                                <a href="javascript:void(0);" title="Contact us">
+                            </li>
+                            <li class="item">                               
+                                <router-link to="/Contact" title="Contáctenos">
                                     Contáctenos
-                                </a>
+                                </router-link>
                             </li>
                             <li class="item">
                                 <a href="javascript:void(0);" title="About us">
                                     Sobre nosotros
                                 </a>
-                            </li>                           
+                            </li>
                             <li>
                                 <a href="javascript:void(0);" title="Sitemap">
                                     Mapa del sitio
@@ -810,7 +840,8 @@
                     </section>
                     <div class="bottom-footer col-xs-12">
                         <div>
-                            &copy; <span class="current-year">2019</span> <a title="Claudia Barrios" href="javascript:void(0);">Ecommerce software by Claudia Barrios</a>
+                            &copy; <span class="current-year">2019</span> <a title="Claudia Barrios"
+                                href="javascript:void(0);">Ecommerce software by Claudia Barrios</a>
                         </div>
                     </div>
                     <!-- /MODULE Block footer -->
@@ -825,13 +856,16 @@
                                     <a href="javascript:void(0);" title="Mis Ordenes" rel="nofollow">Mis Ordenes</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" title="Mis devoluciones de mercancia" rel="nofollow">Mis devoluciones de mercancia</a>
-                                </li>                                
-                                <li>
-                                    <a href="javascript:void(0);" title="Mis direcciones" rel="nofollow">Mis direcciones</a>
+                                    <a href="javascript:void(0);" title="Mis devoluciones de mercancia"
+                                        rel="nofollow">Mis devoluciones de mercancia</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" title="Mi informacion personal" rel="nofollow">Mi informacion personal</a>
+                                    <a href="javascript:void(0);" title="Mis direcciones" rel="nofollow">Mis
+                                        direcciones</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" title="Mi informacion personal" rel="nofollow">Mi
+                                        informacion personal</a>
                                 </li>
                             </ul>
                         </div>
@@ -846,16 +880,16 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>                   
+                    </div>
                 </div>
             </footer>
         </div>
-        <!-- #footer -->                    
+        <!-- #footer -->
     </div>
     <!-- #page -->
     <script type="text/javascript">
         //$(document).ready(function () {            
-            (function() {
+        (function () {
             setNbCatItems();
             tmCategoryCarousel3 = $('#block-category-3 > ul').bxSlider({
                 responsive: true,
@@ -896,28 +930,34 @@
                     resizedwtm_cps3();
                 }, 201);
             });
-            
+
             const routes = [
-                { path: '/', component: Home },               
-                { path: '/Search', component: Search },
+                { path: '/', component: Home },
+                { path: '/Search', name:'Search', component: Search, props: true },
                 { path: '/AllProd', component: Productos },
+                { path: '/Contact', component: Contacto },
             ];
             const router = new VueRouter({
                 //mode: 'history',
-                routes,                
+                routes,
             });
             const app = new Vue({
                 router,
-                mounted(){
-                    ///console.log("******************************");
-                } ,
-                methods:{
-                    Buscar:function(event){
+                mounted() {
+                    // axios.get('http://localhost:8080/Buscar')
+                    //     .then(function (response) {
+                    //         if (response.status === 200) {
+                    //             console.log('respuesta ', response.data);
+                    //         }
+                    //     });
+                },
+                methods: {
+                    Buscar: function (event) {
                         console.log("LLamo a buscar");
                     }
-                }             
+                }
             }).$mount('#page');
-        //});
+            //});
         })();
         function resizedwtm_cps3() {
             setNbCatItems();
@@ -963,4 +1003,5 @@
         }
     </script>
 </body>
+
 </html>
